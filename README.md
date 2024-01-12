@@ -1,16 +1,28 @@
 # 项目说明
 
-基于自制博客样式模拟环境和`ctftraining/base_image_nginx_mysql_php_56`镜像实现的文件上传题目源码
+HappyNewYearCTF2024的题目源码以及Dockerfile, 基于`ctftraining/base_image_nginx_mysql_php_56`镜像。
+
+共设计了3套题目样式：
+- HappyNewYear海报背景，
+  ![img.png](Web/img/img1.png)
+- 博客主题样式+文章搜索+文件上传功能，可嵌入文件上传，爆破查找等题型
+  ![img.png](Web/img/img2.png)
+- 搜索引擎样式，主要用于sql注入题型
+  ![img.png](Web/img/img3.png)
 
 ## 项目结构
-
+Web的PHP题目结构都是类似的，必要文件用`*`标记，以一道文件上传的题目为例，其中除了带`*`的文件和upload.php，都是构成博客主题样式的，可以根据
+需要自由改动。
+当然，也可以不改，在`index.php`中添加一个卡片`<div class="card my-4"></div>`块，并编写PHP的题目文件就可以出好一道简单的题目了。如果需
+要增加的PHP文件，只有数据处理的部分，可以单独在一个单独的PHP文件中做数据处理，然后在卡片`<div class="card my-4"></div>`块引用该文件就可
+以了，具体可以参考`sqlisea1`中的`search.php`和`result.php`。
 ```
 .
-├── Dockerfile
+├── * Dockerfile
 └── src
-    ├── db.sql
-    ├── flag.sh
-    ├── index.php
+    ├── * db.sql
+    ├── * flag.sh
+    ├── * index.php
     ├── upload.php
     ├── assert
     │   ├── logo_style.css
