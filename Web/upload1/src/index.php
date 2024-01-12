@@ -14,7 +14,7 @@
 
 <body class="d-flex flex-column vh-100">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.php">Blog</a>
+    <a class="navbar-brand" href="#">Blog</a>
 </nav>
 
 <div class="container mt-4">
@@ -25,8 +25,8 @@
                     <h4 class="card-title">Awd第一次培训</h4>
                     <div class="card-text">
                         <?php
-                        include "md/md.php";
-                        $post = getPost('md/awd.md', 20);
+                        include "module/md.php";
+                        $post = getPost('model/awd.md', 20);
                         echo $post;
                         ?>
                     </div>
@@ -40,12 +40,11 @@
             <div class="card my-4">
                 <p class="logo">CSSEC</p>
             </div>
-            
             <!-- 文件上传块 -->
             <div class="card my-4">
                 <h5 class="card-header">上传文章</h5>
                 <div class="card-body">
-                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <form action="module/upload.php" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <input type="file" class="form-control-file" id="fileUpload" name="fileUpload">
                         </div>
@@ -68,17 +67,8 @@
             <div class="card my-4">
                 <h5 class="card-header">文章列表</h5>
                 <?php
-                // 获取page目录下所有.html文件
-                $files = glob('post/*.html');
-                // 遍历文件
-                echo "<ol class='text-white-50 font-weight-bold mt-2 mb-2'>";
-                foreach ($files as $file) {
-                    // 获取不带后缀的文件名
-                    $filename = pathinfo($file, PATHINFO_FILENAME);
-                    // 输出文件名
-                    echo "<li><a href='./post/" . $filename . ".html'>" . $filename . "</a></li>";
-                }
-                echo "</ol>";
+                include "module/list.php";
+                echo getPostList();
                 ?>
             </div>
         </div>

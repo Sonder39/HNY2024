@@ -21,8 +21,8 @@
             <div class="card bg-dark text-white mb-4">
                 <div class="card-body">
                     <?php
-                    include "../md/md.php";
-                    $post = getPostAll('../md/awd.md');
+                    include "../module/md.php";
+                    $post = getPostAll('../model/awd.md');
                     echo $post;
                     ?>
                 </div>
