@@ -6,3 +6,7 @@
 - sonder39/origin-sqlisea1 联合注入
 - sonder39/origin-sqlisea2 报错注入
 - sonder39/origin-sqlisea3 布尔盲注
+- sonder39/dull-audit1 弱比较漏洞
+- sonder39/dull-audit2 强比较漏洞
+- sonder39/dull-audit3 MD5碰撞
+- sonder39/dull-audit4 hash长度扩展攻击
