@@ -10,8 +10,9 @@ function getPostAll($file)
     $inCodeBlock = false;
     // 遍历每一行
     foreach ($lines as $line) {
-        $html = mdParse($line, $html, $inCodeBlock)[0];
-        $inCodeBlock = mdParse($line, $html, $inCodeBlock)[1];
+        $result = mdParse($line, $html, $inCodeBlock);
+        $html = $result[0];
+        $inCodeBlock = $result[1];
     }
     return $html;
 }
@@ -34,7 +35,7 @@ function getPost($file, $line_num)
         $i++;
         if ($i === $line_num) break;
     }
-    $html .= '......';
+    $html .= '<div class="loader"></div>';
     return $html;
 }
 
