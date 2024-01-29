@@ -7,9 +7,9 @@
     <!-- Bootstrap Dark Theme from BootSwatch-->
     <link href="../assert/bootswatch/bootstrap.min.css" rel="stylesheet">
     <link href="../assert/logo_style.css" rel="stylesheet">
-    <link href="../assert/padding_style.css" rel="stylesheet">
+    <link href="../assert/override_style.css" rel="stylesheet">
     <link href="../assert/markdown.css" rel="stylesheet">
-    <title>Sonder Blog - Index</title>
+    <title>Sonder Blog - Post</title>
 </head>
 <body class="d-flex flex-column vh-100">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

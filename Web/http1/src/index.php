@@ -7,7 +7,7 @@
     <!-- Bootstrap Dark Theme from BootSwatch-->
     <link href="assert/bootswatch/bootstrap.min.css" rel="stylesheet">
     <link href="assert/logo_style.css" rel="stylesheet">
-    <link href="assert/padding_style.css" rel="stylesheet">
+    <link href="assert/override_style.css" rel="stylesheet">
     <link href="assert/markdown.css" rel="stylesheet">
     <title>Sonder Blog - Index</title>
 </head>
@@ -24,7 +24,7 @@
                     <div class="card-text">
                         <?php
                         include "module/md.php";
-                        $post = getPost('model/HTTP.md', 20);
+                        $post = getPost('source/HTTP.md', 20);
                         echo $post;
                         ?>
                     </div>

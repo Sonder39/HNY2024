@@ -21,11 +21,11 @@ function getCheck()
     }
 
     if ($xForwardedFor !== null) {
-        $ret .= "<p>服务器不会检测X-Forwarded-For</p>";
+        $ret .= "<p>不检测X-Forwarded-For</p>";
     } elseif ($xRealIP !== null) {
-        $ret .= "<p>服务器不会检测X-Real-IP</p>";
+        $ret .= "<p>不检测X-Real-IP</p>";
     } elseif ($clientIP !== null) {
-        $ret .= "<p>服务器不会检测Client-IP</p>";
+        $ret .= "<p>不检测Client-IP</p>";
     } elseif ($xClientIP !== null) {
         if ($xClientIP === '110.191.22.73' || $xClientIP === '110.191.22.79' || $xClientIP === '110.191.22.113') {
             $ret .= '<p>Step 2 satisfied</p>';
@@ -33,6 +33,8 @@ function getCheck()
         } else {
             $ret .= '<p class="text-danger">服务器认为你的IP为：' . $xClientIP . '</p>';
         }
+    } else {
+        $ret .= '<p class="text-warning">服务器无法识别到你的IP</p>';
     }
 
     if ($via !== null) {
@@ -42,11 +44,13 @@ function getCheck()
         } else {
             $ret .= '<p class="text-danger">服务器认为你的代理服务器为：' . $via . '</p>';
         }
+    } else {
+        $ret .= '<p class="text-warning">服务器无法识别到你的代理服务器</p>';
     }
 
     if ($flag === 3) {
         $get_flag = file_get_contents('/flag');
-        $post = getPostAll('../model/HTTP.md');
+        $post = getPostAll('../source/HTTP.md');
         $ret .= "<p class='text-success'>Brilliant! Now I give you flag: " . $get_flag . "</p><br>" . $post;
 
     }
