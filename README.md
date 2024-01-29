@@ -1,6 +1,6 @@
 # 项目说明
 
-HappyNewYearCTF2024的题目源码以及Dockerfile, 基于`ctftraining/base_image_nginx_mysql_php_56`镜像。
+HappyNewYearCTF2024的题目源码以及Dockerfile, 基于`ctftraining/base_image_nginx_php_56`镜像。
 
 共设计了3套题目样式：
 - HappyNewYear海报背景，
@@ -9,6 +9,8 @@ HappyNewYearCTF2024的题目源码以及Dockerfile, 基于`ctftraining/base_imag
   ![img.png](Web/img/img2.png)
 - 搜索引擎样式，主要用于sql注入题型
   ![img.png](Web/img/img3.png)
+- 模拟代码解释器样式，主要用于代码审计类题目
+  ![img.png](Web/img/img4.png)
 
 ## 项目结构
 Web的PHP题目结构都是类似的，必要文件用`*`标记，以一道文件上传的题目为例，其中除了带`*`的文件和upload.php相关文件，都是构成博客主题样式的，可以根据

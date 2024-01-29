@@ -1,12 +1,25 @@
 # Web题目镜像
 - sonder39/origin-http http请求头伪造
-- sonder39/origin-million 爆破和python爬虫的使用
+- sonder39/origin-http1 http请求头伪造
+- sonder39/origin-brute  爆破和python爬虫的使用
 - sonder39/origin-upload1 文件上传
 - sonder39/red-envelope js审计
 - sonder39/origin-sqlisea1 联合注入
 - sonder39/origin-sqlisea2 报错注入
 - sonder39/origin-sqlisea3 布尔盲注
-- sonder39/dull-audit1 弱比较漏洞
-- sonder39/dull-audit2 强比较漏洞
-- sonder39/dull-audit3 MD5碰撞
-- sonder39/dull-audit4 hash长度扩展攻击
+- sonder39/origin-audit1 弱比较漏洞
+- sonder39/origin-audit2 强比较漏洞
+- sonder39/origin-audit3 MD5碰撞
+- sonder39/origin-audit4 hash长度扩展攻击
+
+- sonder39/origin-servuln9  PHP反序列化
+- sonder39/origin-servuln13 PHP反序列化
+- sonder39/origin-servuln12 PHP反序列化
+- sonder39/origin-servuln11 PHP反序列化
+- sonder39/origin-servuln8  PHP反序列化
+- sonder39/origin-servuln7  PHP反序列化
+- sonder39/origin-servuln6  PHP反序列化
+- sonder39/origin-servuln4  PHP反序列化
+- sonder39/origin-servuln3  PHP反序列化
+- sonder39/origin-servuln2  PHP反序列化
+- sonder39/origin-servuln1  PHP反序列化
