@@ -13,11 +13,11 @@ function getCheck()
     $flag = 0;
 
     if ($method === 'POST') {
-        $ret = '<p class="text-success">Now your http method： POST <p>' . $ret;
+        $ret = '<p class="text-success">当前HTTP请求方法： POST <p>' . $ret;
         $ret .= '<p>Step 1 satisfied</p>';
         $flag += 1;
     } else {
-        $ret .= '<p class="text-danger">Now your http method： ' . $method . '</p>';
+        $ret .= '<p class="text-danger">当前HTTP请求方法： ' . $method . '</p>';
     }
 
     if ($xForwardedFor !== null) {

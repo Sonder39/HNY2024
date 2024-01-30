@@ -1,9 +1,4 @@
-<?php
-include '../module/jwt.php';
-if (!isset($_COOKIE['token'])) {
-    generateToken();
-} ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -26,24 +21,22 @@ if (!isset($_COOKIE['token'])) {
         <div class="col-md-10">
             <div class="card bg-dark text-white-50 mb-4">
                 <div class="card-body">
-                    <?php
-                    include "../module/md.php";
-                    $post = getPostAll('../md/jwt.md');
-                    echo $post;
-                    ?>
+                    <h5 class="text-info">服务器检测通过即可查看文章内容</h5>
+                    <p>可选字典：https://github.com/first20hours/google-10000-english</p>
                 </div>
             </div>
-            <div class="card bg-dark text-white mb-4">
+            <div class="card bg-dark text-white-50 mb-4">
                 <div class="card-body">
-                    <h5 class="text-info">想要FLAG，先出示你的令牌吧</h5>
                     <?php
+                    include "../jwt.php";
                     if (!isset($_COOKIE['token'])) {
-                        echo "<h5 class='text-info'>请先刷新页面😣</h5>";
+                        echo "<p class='text-white-50'>检测到token为空, 可能需要刷新一下浏览器😣</p>";
                     } else {
                         echo validateToken();
                     }
                     ?>
-                    <button class="btn btn-dark" onclick="window.location.href='../index.php'">回到首页</button>
+                    <button class="btn btn-dark text-white-50" onclick="window.location.href='../index.php'">回到首页
+                    </button>
                 </div>
             </div>
         </div>

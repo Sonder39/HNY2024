@@ -1,4 +1,9 @@
-<!doctype html>
+<?php
+include 'jwt.php';
+if (!isset($_COOKIE['token'])) {
+    generateToken();
+} ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -25,8 +30,7 @@
                     <h2 class="card-title">精彩内容展示</h2>
                     <div class="card-text">
                         <?php
-                        include "module/md.php";
-                        $post = getPost('md/jwt.md', 20);
+                        $post = getPost('source/jwt.md', 20);
                         echo $post;
                         ?>
                     </div>
@@ -41,7 +45,9 @@
                 <p class="logo">CSSEC</p>
             </div>
             <div class="card my-4">
-                <p class="text-white-50 m-2">字典：https://github.com/first20hours/google-10000-english</p>
+                <button class="btn btn-dark m-3 text-white-50" onclick="window.location.href='post/post.php'">
+                    点击前往查看FLAG的页面
+                </button>
             </div>
         </div>
     </div>
