@@ -11,6 +11,7 @@
 - sonder39/origin-audit2 强比较漏洞
 - sonder39/origin-audit3 MD5碰撞
 - sonder39/origin-audit4 hash长度扩展攻击
+- sonder39/origin-xxe XXE
 
 - sonder39/origin-ce1 eval()函数
 - sonder39/origin-ce2 assert()函数  
