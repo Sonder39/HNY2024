@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap Dark Theme from BootSwatch-->
     <link href="../assert/bootswatch/bootstrap.min.css" rel="stylesheet">
-    <link href="../assert/padding_style.css" rel="stylesheet">
+    <link href="../assert/override_style.css" rel="stylesheet">
     <link href="../assert/markdown.css" rel="stylesheet">
     <title>Sonder Blog - Post</title>
 </head>

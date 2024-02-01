@@ -12,6 +12,14 @@
 - sonder39/origin-audit3 MD5碰撞
 - sonder39/origin-audit4 hash长度扩展攻击
 
+- sonder39/origin-ce1 eval()函数
+- sonder39/origin-ce2 assert()函数  
+- sonder39/origin-ce3 call_user_func()函数
+- sonder39/origin-ce4 create_function()函数 
+- sonder39/origin-ce5 array_map()函数 
+- sonder39/origin-ce6 preg_replace()函数 /e 
+- sonder39/origin-ce7 可变函数
+
 - sonder39/origin-servuln9  PHP反序列化
 - sonder39/origin-servuln13 PHP反序列化
 - sonder39/origin-servuln12 PHP反序列化

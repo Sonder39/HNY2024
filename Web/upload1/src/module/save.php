@@ -4,8 +4,8 @@ function writeFile($filename, $target_file)
     // 打开文件
     $file = fopen($filename, "w");
     // 读取head和tail文件的内容
-    $head = file_get_contents('../model/head');
-    $tail = file_get_contents('../model/tail');
+    $head = file_get_contents('../templates/head');
+    $tail = file_get_contents('../templates/tail');
     // 写入head
     fwrite($file, $head);
     // 写入文件内容
