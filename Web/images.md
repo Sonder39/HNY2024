@@ -13,7 +13,9 @@
 - sonder39/origin-audit4 hash长度扩展攻击
 - sonder39/origin-xxe XXE
 - sonder39/origin-bypass1 过滤空格
-- 
+- sonder39/origin-bypass2 过滤关键字
+- sonder39/origin-bypass3 过滤目标文件
+
 - sonder39/origin-ce1 eval()函数
 - sonder39/origin-ce2 assert()函数  
 - sonder39/origin-ce3 call_user_func()函数
